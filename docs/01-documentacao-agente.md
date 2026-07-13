@@ -22,7 +22,7 @@ Qualquer pessoa com interesse em ter uma vida financeira saudavel mas nâo enten
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-Enrico
+Finguru
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
