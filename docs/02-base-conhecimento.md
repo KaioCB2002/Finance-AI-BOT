@@ -20,7 +20,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Realizei os ajustes no perfil de investidor para se assemelhar melhor a minha situação e adicionei diversos dados ao histórico de interações para deixar mais robusto.
 
 ---
 
@@ -29,12 +29,46 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+import pandas as pd
+import json
+
+
+def carregar_contexto():
+    # Leitura dos arquivos
+    historico = pd.read_csv("dados/historico_atendimento.csv")
+    transacoes = pd.read_csv("dados/transacoes.csv")
+
+    with open("dados/perfil_investidor.json", encoding="utf-8") as f:
+        perfil = json.load(f)
+
+    with open("dados/produtos_financeiros.json", encoding="utf-8") as f:
+        produtos = json.load(f)
+
+    contexto = f"""
+# Base de Conhecimento
+
+## Perfil do Investidor
+{json.dumps(perfil, indent=2, ensure_ascii=False)}
+
+## Produtos Financeiros
+{json.dumps(produtos, indent=2, ensure_ascii=False)}
+
+## Histórico de Atendimento
+{historico.to_markdown(index=False)}
+
+## Histórico de Transações
+{transacoes.to_markdown(index=False)}
+
+Utilize exclusivamente essas informações para responder as perguntas.
+Caso a informação não exista na base de dados, informe que ela não foi encontrada.
+"""
+
+    return contexto
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+não
 
 ---
 
