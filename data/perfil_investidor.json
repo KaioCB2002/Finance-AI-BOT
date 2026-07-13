@@ -2,7 +2,7 @@
   "nome": "Ana Clara",
   "idade": 24,
   "profissao": "escrevente tecnico judiciario",
-  "renda_mensal": 8000.00,
+  "renda_mensal": 10000.00,
   "perfil_investidor": "moderado",
   "objetivo_principal": "Alcançar primeira meta de investimentos",
   "patrimonio_total": 0,
@@ -12,17 +12,17 @@
     {
       "meta": "Alcançar primeira meta de investimentos",
       "valor_necessario": 100000.00,
-      "prazo": "2028-10"
+      "prazo": "2030-10"
     },
     {
       "meta": "Entrada do apartamento",
       "valor_necessario": 50000.00,
-      "prazo": "2030-12"
+      "prazo": "2032-12"
     },
     {
       "meta": "Comprar um carro a vista",
       "valor_necessario": 40000.00,
-      "prazo": "2029-12"
+      "prazo": "2031-06"
     }
   ]
 }
