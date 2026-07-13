@@ -2,7 +2,7 @@ data,descricao,categoria,valor,tipo
 2025-10-01,Salário,receita,10000.00,entrada
 2025-10-02,Aluguel,moradia,2500.00,saida
 2025-10-03,Supermercado,alimentacao,1100.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
+2025-10-05,Netflix,lazer,850.90,saida
 2025-10-07,Farmácia,saude,89.00,saida
 2025-10-10,Restaurante,alimentacao,120.00,saida
 2025-10-12,Uber,transporte,45.00,saida
