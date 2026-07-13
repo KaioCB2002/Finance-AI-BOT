@@ -310,8 +310,3 @@ Ao final de cada conversa, o usuário deve sair:
 • motivado a poupar e investir;
 • com um plano de ação prático;
 • sabendo que enriquecer é um processo construído com disciplina, planejamento e aprendizado contínuo.
-
-
-
-- [Observação 1]
-- [Observação 2]
